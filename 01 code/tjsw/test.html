@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="ckfinder/ckfinder.js"></script>
+
+<textarea id="content" name="content" class="ckeditor">初始化内容...</textarea>
+<script type="text/javascript">
+   if (typeof CKEDITOR == 'undefined') {
+   document.write('加载CKEditor失败');
+   }
+   else {
+   var editor = CKEDITOR.replace('content');
+   CKFinder.SetupCKEditor(editor, '../dcore/ckfinder/'); //ckfinder总目录的相对路径.注意此处的写法，(../根目录(zhongyuan)/ ckfinder/)
+ }
+
+</script>
+

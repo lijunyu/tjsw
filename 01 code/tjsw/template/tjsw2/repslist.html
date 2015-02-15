@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<html dir=ltr lang=zh-cn xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{dc_category_name}</title>
+<meta content="text/html; charset=gb2312" http-equiv=content-type>
+<meta http-equiv="X-Ua-Compatible" content="IE=EmulateIE7" />
+<meta name="description" content={dc_description} />
+<meta name="keywords" content="{dc_keywords}" />
+<link rel="stylesheet" type=text/css href="{dc_filepath}{dc_css}" media=screen>
+</head>
+
+<body>
+<div style="display:none;" id="dc_category_name">{dc_category_name}</div>
+<dc_tag:include tempfile="head"></dc_tag>
+
+<div class="content">
+	
+	<div class="ad-content">
+		<div id="ad-news"></div>
+	</div>
+	
+	<div id="reps-content">
+	
+		<div class="reps-nav">
+			<a title="首页" href="{dc_filepath}index.asp?subsite={dc_subsite_id}">首页</a> > {dc_search_string}<a href="{dc_filepath}{dc_category_path}">{dc_category_name}</a> > 文章列表
+		</div>
+		
+		<dc_tag:article_abstract count="4" length="50" page="10" top="1">
+		<div class="reps">
+			<div class="repsLeft">
+				<a href="{dc_filepath}{dc_article_path}"><img style="width:180px;height:220px;padding: 23px;" src="{article_picpath}" alt="{dc_filepath}{dc_article_title}"/></a>
+			</div>
+			<div class="repsRight">
+				<div class="title">
+					<h4 align="left"><a href="{dc_filepath}{dc_article_path}">{dc_article_title}</a></h4>
+					<h5 align="right">{dc_article_date}</h5>
+				</div>
+				<div class="content">
+					{dc_article_abstract}
+					<p><a href="{dc_filepath}{dc_article_path}">全文阅读>></a></p>
+				</div>
+			</div>
+			
+		</div>
+		</dc_tag>
+		
+		<div class="pagebar">		
+			<div id="pagebox" >
+				{dc_article_page}	
+			</div>
+		</div>
+
+	</div>
+
+<dc_tag:include tempfile="foot"></dc_tag>
+
+</body>
+</html>

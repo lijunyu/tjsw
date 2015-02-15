@@ -1,0 +1,37 @@
+<%
+col_url="http://baike.baidu.com/view/590(*).htm"
+col_url_begin="40"
+col_url_end="50"
+col_code="gb2312"
+col_order="asc"
+col_timeout="2"
+col_title_begin="<title>"
+col_title_begin_include=False
+col_title_end="</title>"
+col_title_end_include=False
+col_title_replace="[title]"
+col_author_begin=""
+col_author_begin_include=True
+col_author_end=""
+col_author_end_include=True
+col_author_replace="dingjun"
+col_date_begin=""
+col_date_begin_include=True
+col_date_end=""
+col_date_end_include=True
+col_date_replace=""
+col_category="4"
+col_tag_begin="<h1 class=""title"">"
+col_tag_begin_include=False
+col_tag_end="</h1>"
+col_tag_end_include=False
+col_tag_replace="°Ù¿Æ,[tag]"
+col_content_begin="<h1 class=""title"">"
+col_content_begin_include=True
+col_content_end="<div class=""bpctrl"" style=""clear:both"">"
+col_content_end_include=False
+col_content_replace="[content]"
+col_top="0"
+col_hidden=False
+col_authorize="all"
+%>

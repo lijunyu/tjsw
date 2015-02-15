@@ -1,0 +1,25 @@
+<script>
+var dc_category_name = "";
+if(document.getElementById("dc_category_name")){
+	dc_category_name = document.getElementById("dc_category_name").innerHTML;
+}
+</script>
+<div class="header">
+
+	<div id="header">
+		<div class="logo">
+			<a style="background:url({dc_fileurl}{dc_logo_path}) no-repeat;" title="{dc_sitename}" href="{dc_fileurl}index.asp?subsite={dc_subsite_id}" name="top"></a>
+		</div>
+		
+		<div class="nav">
+			<ul>
+				<li><a id="index" class="thisnav" href="{dc_fileurl}index.asp?subsite={dc_subsite_id}">首页</a></li>		
+				<li><a href="{dc_fileurl}dynamic.asp?subsite={dc_subsite_id}&category_id=13">所有产品</a></li>
+				<li><a href="{dc_fileurl}dynamic.asp?subsite={dc_subsite_id}&category_id=2">动态新闻</a></li>
+				<li><a href="{dc_fileurl}dynamic.asp?subsite={dc_subsite_id}&category_id=18">产品反馈</a></li>
+				<li><a href="{dc_fileurl}dynamic.asp?subsite={dc_subsite_id}&article_id=50">关于我们</a></li>
+			</ul>
+		</div>
+	</div>
+    
+</div>
